@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+body {
+    background-color: #e5e5fd;
+}
+
+/* Main Container */
+.container {
+    min-height: 100vh;
+    padding: 40px 0;
+}
+
+/* White Content Box */
+.content {
+    max-width: 900px;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Top Section */
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Headings */
+.top-section h1 {
+    font-size: 48px;
+    color: #1d1e4c;
+    text-transform: uppercase;
+}
+
+.top-section h4 {
+    font-size: 22px;
+    color: #555;
+    text-align: right;
+}
+
+/* Image */
+.image-container {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #1d1e4c;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* About Section */
+.about-section {
+    margin-top: 50px;
+}
+
+.about-section h2 {
+    font-size: 32px;
+    color: #1d1e4c;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #1d1e4c;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.about-section p {
+    font-size: 16px;
+    line-height: 1.9;
+    color: #333;
+    text-align: justify;
+}
+
+/* Responsive (Mobile Friendly) */
+@media (max-width: 768px) {
+    .top-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .top-section h4 {
+        text-align: center;
+    }
+}
+
+
+
+/* Quote Section */
+.quote-section {
+    margin-top: 60px;
+    padding: 30px;
+    background-color: #f0f0ff;
+    border-left: 5px solid #1d1e4c;
+    font-style: italic;
+}
+
+.quote-section p {
+    font-size: 20px;
+    color: #1d1e4c;
+    margin-bottom: 10px;
+}
+
+.quote-section h4 {
+    text-align: right;
+    color: #555;
+}
+
+/* Footer */
+.footer {
+    margin-top: 40px;
+    text-align: center;
+    padding: 20px;
+    color: #555;
+    font-size: 14px;
+}
+
+.image-container {
+    transition: transform 0.3s ease;
+}
+
+.image-container:hover {
+    transform: scale(1.05);
+}
